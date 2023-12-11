@@ -2,10 +2,15 @@ public class Vehicle {
     String Brand;
     String Model;
     int Year;
-    public Vehicle(String brand, String model, int year) {
+    int Weight;
+    int Wheels;
+
+    public Vehicle(String brand, String model, int year, int wheight, int wheels) {
         Brand = brand;
         Model = model;
         Year = year;
+        Weight = wheight;
+        Wheels = wheels;
     }
     public void Accelerate() {
         System.out.printf("I'm putting the pedal to the metal! (Let's hope the car doesnt explode)\n");
